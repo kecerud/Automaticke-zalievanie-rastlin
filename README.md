@@ -14,5 +14,15 @@ Na riadenie GPIO pinov na raspberry je použitá pythonová knižnica RPi.GPIO.
 -Automatické zalievanie (zaleje rastlinu vždy keď senzor ukáže že nieje dostatok vody)
 
 -Vypnutie automatického zalievania
-
+  
+![alt text](https://github.com/kecerud/Automaticke-zalievanie-rastlin/blob/main/assets/day-mode.png?raw=true)
+  
+![alt text](https://github.com/kecerud/Automaticke-zalievanie-rastlin/blob/main/assets/night-mode.png?raw=true)
+  
 ![alt text](https://github.com/kecerud/Automaticke-zalievanie-rastlin/blob/main/assets/final.jpg?raw=true)
+  
+![alt text](https://github.com/kecerud/Automaticke-zalievanie-rastlin/blob/main/assets/inside-1.jpg?raw=true)
+  
+![alt text](https://github.com/kecerud/Automaticke-zalievanie-rastlin/blob/main/assets/inside-2.jpg?raw=true)
+  
+![alt text](https://github.com/kecerud/Automaticke-zalievanie-rastlin/blob/main/assets/model.png?raw=true)

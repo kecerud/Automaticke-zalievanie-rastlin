@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavlazovanie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleupd.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="preload" as="image" href="{{ url_for('static', filename='images/Ikonky/day/auto_on.png') }}" type="image/png">
+    <link rel="preload" as="image" href="{{ url_for('static', filename='images/Ikonky/day/auto_off.png') }}" type="image/png">
+    <link rel="preload" as="image" href="{{ url_for('static', filename='images/Ikonky/day/humid.png') }}" type="image/png">
+    <link rel="preload" as="image" href="{{ url_for('static', filename='images/Ikonky/day/single.png') }}" type="image/png">
+    <link rel="preload" as="image" href="{{ url_for('static', filename='images/Ikonky/day/last_time.png') }}" type="image/png">
+
+</head>
+<body class="night">
+
+    <div class="fullscreen-video-wrap">
+        <video src="{{ url_for('static', filename='mp4/Black_Animation.mp4') }}" autoplay muted></video>
+    </div> 
+
+<main>
+    <div class="toggle"></div>
+
+    <div class="content">
+
+    <div class="mlogo">
+        <h1><img img data-img="6" src="">PLANT HELPLINE {{text}} {{time}}</h1>
+    </div>
+
+    <div class="container">
+    <div class="icon hoverable">
+       <a href="/auto/water/ON">
+            <img data-img="1" 
+            src="" 
+        ></a>
+        <p class="title">ZALIEVANIE ON</p>
+    </div>
+    <div class="icon hoverable">
+        <a href="/auto/water/OFF">
+            <img data-img="2"  
+            src="" 
+        ></a>
+        <p class="title">ZALIEVANIE OFF</p>
+    </div>
+    <div class="icon hoverable">
+        <a href="/sensor">
+            <img data-img="3"  
+            src="" 
+        ></a>
+        <p class="title">VLHKOSTŤ</p>
+    </div>
+    <div class="icon hoverable">
+        <a href="/water">
+            <img data-img="4" 
+            src="" 
+        ></a>
+        <p class="title">JEDNORAZOVE  ZALIATIE</p>
+    </div>
+    <div class="icon hoverable">
+        <a href="/naposledy_zaliate">
+            <img data-img="5" 
+            src="" 
+        ></a>
+        <p class="title">POSLEDNE  ZALIATIE</p>
+        </div>
+    </div>
+
+</div>
+</main>
+
+</body>
+</html>
+
+

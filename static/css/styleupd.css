@@ -1,0 +1,161 @@
+body.night
+{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    background-color: #101010;
+}
+body.day
+{
+    background: #fff;
+}
+.toggle
+{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: #101010;
+    border: 2px solid #fff;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.toggle.active
+{
+    background: #fff;
+    border: 2px solid #101010;
+}
+.toggle:before
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.toggle.active:before
+{
+    left: 27px;
+    background: #101010;
+}
+.content
+{
+    position: relative;
+    margin: 100px auto;
+    width: 1000px;
+}
+.content h1
+{
+    right: 20px;
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    font-family: lib_sans_bold;
+    font-weight: 100;
+}
+.content p
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    font-family: lib_sans_bold;
+    font-size: 25px;   
+}
+
+/* Day-Night Switch styling */
+
+body.day .content h1
+{
+    color: #101010;
+    font-family: lib_sans_bold;
+    font-weight: 100;
+} 
+
+body.day .content p
+{
+  color: #101010;
+  font-family: lib_sans_bold;
+  font-size: 25px;
+}
+                                          
+/*Preloader position*/
+.fullscreen-video-wrap{
+    position: fixed;
+    top: 0;
+    right:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}  
+
+/* icons */
+
+.icon {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .icon img {
+    position: relative;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .icon .title {
+    text-align: center;
+    display: none;
+
+  }
+  
+  .hoverable {
+    cursor: pointer;
+  }
+  
+  .icon.hoverable:hover img {
+    filter: grayscale(1);
+  }
+  
+  .icon.hoverable:hover .title {
+    position: relative;
+    display: block;
+    top: 10px;  
+
+  }
+  .container {
+    display: flex;
+    margin-top: 35%;
+  }
+  
+  .icon.hoverable {
+    flex: 1;
+    text-align: center;
+  }
+  main {
+    display: none;
+  }
+
+  /* Kvetinac obrazok pri nadpise */
+
+  .mlogo img{
+    height: 70px;
+    width: 60px;
+  }
+
+  /*Pouzite fonty */
+
+@font-face{
+  font-family: 'lib_sans_bold';
+  src: url(../fonts/LiberationSans-Bold.ttf);
+  font-style: normal;
+  
+}
+
